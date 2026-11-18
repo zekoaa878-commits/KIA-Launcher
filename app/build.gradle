@@ -1,0 +1,15 @@
+plugins { id 'com.android.application' }
+android {
+  namespace 'com.kia.launcher'
+  compileSdk 33
+  defaultConfig {
+    applicationId 'com.kia.launcher'
+    minSdk 26
+    targetSdk 28
+    versionCode 3
+    versionName '1.2-lite-ac8227l'
+  }
+  buildTypes { release { minifyEnabled false; shrinkResources false } }
+  compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+}
+dependencies { implementation 'androidx.appcompat:appcompat:1.6.1' }
